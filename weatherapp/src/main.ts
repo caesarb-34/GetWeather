@@ -1,7 +1,8 @@
 import { getLocationInfo } from './getLocation';
 import './style.css'
 import typescriptLogo from './typescript.svg'
-import { LocationInfo } from "/Users/caesber/Documents/repos/weatherapp/weatherapp/location.ts";
+// import { LocationInfo } from "/Users/caesber/Documents/repos/weatherapp/weatherapp/location.ts";
+// import { LocationInfo } from './location';
 import { fetchWeatherData } from './weatherData';
 
 
