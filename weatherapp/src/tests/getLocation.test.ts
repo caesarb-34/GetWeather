@@ -1,4 +1,5 @@
-import { getLocationInfo } from '/Users/caesber/Documents/repos/weatherapp/weatherapp/src/getLocation.ts';
+// import { getLocationInfo } from '/Users/caesber/Documents/repos/weatherapp/weatherapp/src/getLocation.ts';
+import { getLocationInfo } from "../getLocation"; 
 import { LocationInfo } from "../location";
 import { fetchLocationData } from "../location";
 

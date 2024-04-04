@@ -1,9 +1,9 @@
-import { getLocationInfo } from './getLocation';
+// import { getLocationInfo } from './getLocation';
 import './style.css'
 import typescriptLogo from './typescript.svg'
-import { LocationInfo } from "./location";
-import { checkLocationDataOrThrow } from "/Users/caesber/Documents/repos/weatherapp/weatherapp/src/transformLocation.ts";
-import { fetchWeatherData } from './weatherData';
+// import { LocationInfo } from "./location";
+// // import { checkLocationDataOrThrow } from "/Users/caesber/Documents/repos/weatherapp/weatherapp/src/transformLocation.ts";
+// import { fetchWeatherData } from './weatherData';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -42,19 +42,19 @@ async function main(): Promise<number | void> {
     let inputField = document.querySelector<HTMLInputElement>('#inputField')?.value!;
     inputField = inputField.trim().toLowerCase();
 
-    let locationInfo: LocationInfo;
-    let location = inputField;
+    // let locationInfo: LocationInfo;
+    // let location = inputField;
 
     try {
-      locationInfo = await getLocationInfo(location);
-      const { lat, lon, display_name } = checkLocationDataOrThrow(locationInfo);
-      const temperatureData = await fetchWeatherData(lat, lon);
-      console.log(temperatureData.current_weather);
+      // locationInfo = await getLocationInfo(location);
+      // const { lat, lon, display_name } = checkLocationDataOrThrow(locationInfo);
+      // const temperatureData = await fetchWeatherData(lat, lon);
+      // console.log(temperatureData.current_weather);
 
-      let div = document.createElement('div');
-      div.textContent = `Location: ${display_name}, Temperature: ${temperatureData.current_weather.temperature}, ${temperatureData.current_weather_units.temperature}`;
-      document.body.appendChild(div);
-      return locationInfo;
+      // let div = document.createElement('div');
+      // div.textContent = `Location: ${display_name}, Temperature: ${temperatureData.current_weather.temperature}, ${temperatureData.current_weather_units.temperature}`;
+      // document.body.appendChild(div);
+      // return locationInfo;
     } catch (error) {
       console.error(error);
       let errorDiv = document.createElement('div');

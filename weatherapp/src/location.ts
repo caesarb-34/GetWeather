@@ -1,5 +1,5 @@
 import axios from 'axios';
-// import type { AxiosStatic } from 'axios';}
+import type { AxiosRequestConfig } from 'axios';
 
 
 // an interface is a way to define a type in TypeScript
@@ -29,7 +29,7 @@ export async function fetchLocationData(
     };
     
     // response returns an array of objects with location data that is specified such as lat, lon, and display_name
-    const response = await axios.request<LocationInfo[]>(options);
+    const response = await axios.request<LocationInfo[]>(options as AxiosRequestConfig);
     
 
     // if the status is 200, then return the first object in the array
