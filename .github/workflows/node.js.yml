@@ -73,8 +73,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
-        run: cd ./weatherapp
-      - run: pnpm i   
-      - run: pnpm run build --if-present
-      - run: pnpm test
+        run: cd ./weatherapp && pnpm i && pnpm run build --if-present && pnpm test
 
