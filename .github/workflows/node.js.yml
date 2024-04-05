@@ -73,7 +73,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
-        run: cd weatherapp && pnpm i
+        run: cd weatherapp
+      - run: pnpm i   
       - run: pnpm run build --if-present
       - run: pnpm test
 
